@@ -36,3 +36,4 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/nookcolor
 
+PRODUCT_PACKAGES += SoftKeys
