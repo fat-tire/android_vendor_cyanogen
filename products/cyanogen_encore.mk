@@ -12,6 +12,9 @@ PRODUCT_BRAND := bn
 PRODUCT_DEVICE := encore
 PRODUCT_MODEL := NookColor
 PRODUCT_MANUFACTURER := bn
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRH78 PRODUCT_NAME=encore BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
+
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/encore
 
 #
 # Set ro.modversion
@@ -29,11 +32,8 @@ else
     endif
 endif
 
-PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=FRG83D BUILD_DISPLAY_ID=GRH78 PRODUCT_NAME=encore TARGET_DEVICE=encore BUILD_FINGERPRINT=bn/encore/encore/encore:2.2.1/FRG83D/75603:user/release-keys PRODUCT_BRAND=bn PRIVATE_BUILD_DESC="encore-user 2.3.1 FRG83D 75603 release-keys" BUILD_NUMBER=75603 BUILD_UTC_DATE=1289367602 TARGET_BUILD_VARIANT=eng TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys USER=android-build
 
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
-
-PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/encore
 
 PRODUCT_PACKAGES += SoftKeys
