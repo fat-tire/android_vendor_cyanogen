@@ -1,4 +1,4 @@
-# Inherit AOSP device configuration for passion.
+# Inherit AOSP device configuration for encore.
 $(call inherit-product, device/bn/encore/device_encore.mk)
 
 # Inherit some common cyanogenmod stuff.
